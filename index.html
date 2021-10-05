@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lista de tarefas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Guilherme Hassã">
+
+  <link rel="shortcut icon" href="icon.png" />
+
+  <title>Lista de Tarefas - Guilherme Hassã</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main class="lista">
+    <h1 class="lista__titulo">Tarefas <span id="nome"></span></h1>
+  
+    <ul class="lista__itens">
+      <li class="lista__item item-inserir">
+
+        <input type="text" class="item__nome" placeholder="Digite e clique no botão + para adicionar a tarefa" id="adicionarNome" onkeydown="if(event.keyCode == 13 && this.value != '') {adicionarItem(this.value); limparValor(); }" >
+
+        <button class="item__cancelar" id="adicionar">+</button>
+      </li>
+      
+      <!-- <li class="lista__item">
+        <input type="checkbox" class="item__check" id="checar">
+
+        <input type="text" class="item__nome" readonly>
+
+        <button class="item__cancelar" id="cancelar">x</button>
+      </li>
+      
+      <li class="lista__item item-feito">
+        <input type="checkbox" class="item__check">
+
+        <input type="text" class="item__nome" value="asdasdasd">
+
+        <button class="item__cancelar">x</button>
+      </li> -->
+    </ul>
+  
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
